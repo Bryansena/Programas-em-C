@@ -1,0 +1,42 @@
+
+#include <stdio.h>
+
+int main()
+{
+	int z = 0, n = 0, r = 0;
+	char rep;
+	printf("\ttabuada\n\n");
+	do {
+		printf("escolha um numero: ");
+		scanf("%d", &z);
+		for(int n = 1; n <= 10; n++) {
+			r = z * n;
+			printf("%d * %d = %d\n", z, n, r);
+		}
+		printf("Novo calculo : (S|N)");
+		scanf(" %c", &rep);
+
+	} while(rep == 'S'|| rep == 's');
+	
+int a = 0, b = 0,  i, x, n, r;
+	printf("Sequencia em Pares\n");
+	for(int i = 2; i <= 30; i++) {
+		if (i%2 == 0) {
+			printf("%d\n", i);
+			a += i;
+		}
+	}
+
+	printf("Resultado da Soma:%d", a);
+
+	printf("\n\nPrograma 2\n");
+	printf("escolha um numero: ");
+	scanf("%d", &x);
+	for(int n = 1; n <= 15; n++) {
+		r = x + n;
+		printf("%d + %d = %d\n", x, n, r);
+
+	}
+
+	return 0;
+}
